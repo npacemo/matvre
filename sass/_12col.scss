@@ -1,9 +1,9 @@
 /****************************************\
- * Fraction.less Responsive grid 		*
- *							 	  		*
- * Author: 	Bill Patrianakos 	  		*
- * Site:	billpatrianakos.me 	  		*
- * License: BSD					  		*
+ * Fraction.less Responsive grid        *
+ *                                      *
+ * Author:  Bill Patrianakos            *
+ * Site:    billpatrianakos.me          *
+ * License: BSD                         *
 \****************************************/
 
 /*:::: CONTAINERS ::::*/
@@ -81,11 +81,11 @@ float: left;
 /*:::: FLOATS ::::*/
 
 .left {
- 	float: left;
+    float: left;
  }
 
  .right {
- 	float: right;
+    float: right;
  }
 
  /* Last div in a row can't mess up our nice grid */
@@ -101,7 +101,7 @@ max-width: 100%;
 }
 
 img {
-	height: auto;
+    height: auto;
 }
 
 /* !! MEDIA QUERIES ARE AT THE BOTTOM OF 'style.less' - LEAVE THEM THERE FOR GOOD REASON !! */

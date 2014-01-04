@@ -267,13 +267,13 @@ table {
 /*:::: TEXT SELECTION COLORS ::::*/
 
 ::selection, ::-moz-selection {
-	background: rgb(255,255,158);
+    background: rgb(255,255,158);
 }
 
 img::selection, img::-moz-selection {
-	background: transparent;
+    background: transparent;
 }
 
 body {
-	-webkit-tap-highlight-color: rgb(255,255,158);
+    -webkit-tap-highlight-color: rgb(255,255,158);
 }

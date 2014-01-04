@@ -1,104 +1,116 @@
-/*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
-    -------------------------------------------------------
-    The full suite of pictographic icons, examples, and documentation
-    can be found at: http://fortawesome.github.com/Font-Awesome/
-
-    License
-    -------------------------------------------------------
-    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-    http://creativecommons.org/licenses/by/3.0/ A mention of
-    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-    source code is considered acceptable attribution (most common on the web).
-    If human readable source code is not available to the end user, a mention in
-    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-    or mobile software).
-
-    Contact
-    -------------------------------------------------------
-    Email: dave@davegandy.com
-    Twitter: http://twitter.com/fortaweso_me
-    Work: Lead Product Designer @ http://kyruus.com
-
-    */
-
-@fontAwesomePath: '../font';
+/*:::: CUSTOM FONTS ::::*/
 
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('@{fontAwesomePath}/fontawesome-webfont.eot');
-  src: url('@{fontAwesomePath}/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-    url('@{fontAwesomePath}/fontawesome-webfont.woff') format('woff'),
-    url('@{fontAwesomePath}/fontawesome-webfont.ttf') format('truetype'),
-    url('@{fontAwesomePath}/fontawesome-webfont.svg#FontAwesome') format('svg');
+font-family: 'Edmondsans';
+src: url('../font/edmondsans-regular-webfont.eot'); /* IE9 Compat Modes */
+src: url('../font/edmondsans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/edmondsans-regular-webfont.svg#edmondsans_regularregular') format('svg'), /* Legacy iOS */
+    url('../font/edmondsans-regular-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/edmondsans-regular-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+font-family: 'Edmondsans-Medium';
+src: url('../font/edmondsans-medium-webfont.eot'); /* IE9 Compat Modes */
+src: url('../font/edmondsans-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/edmondsans-medium-webfont.svg#edmondsans_mediumregular') format('svg'), /* Legacy iOS */
+    url('../font/edmondsans-medium-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/edmondsans-medium-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+font-family: 'Edmondsans-Bold';
+src: url('../font/edmondsans-bold-webfont.eot'); /* IE9 Compat Modes */
+src: url('../font/edmondsans-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/edmondsans-bold-webfont.svg#edmondsans_boldregular') format('svg'), /* Legacy iOS */
+    url('../font/edmondsans-bold-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/edmondsans-bold-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+font-family: 'Fanwood';
+src: url('../font/fanwood-webfont.eot'); /* IE9 Compat Modes */
+src: url('../font/fanwood-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/fanwood-webfont.svg#FanwoodRegular') format('svg'), /* Legacy iOS */
+    url('../font/fanwood-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/fanwood-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Fanwood-italic';
+src: url('../font/fanwood_italic-webfont.eot'); /* IE9 Compat Modes */
+src: url('../font/fanwood_italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/fanwood_italic-webfont.svg#FanwoodItalic') format('svg'), /* Legacy iOS */
+    url('../font/fanwood_italic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/fanwood_italic-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+font-family: 'SourceCodePro';
+src: url('../font/SourceCodePro-Regular-webfont.eot'); /* IE9 Compat Modes */
+src: url('../font/SourceCodePro-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/SourceCodePro-Regular-webfont.svg#SourceCodeProRegular') format('svg'), /* Legacy iOS */
+    url('../font/SourceCodePro-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/SourceCodePro-Regular-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/*:::: FONT-AWESOME ::::*/
+@font-face {
+  font-family: "FontAwesome";
+  src: url('../font/fontawesome-webfont.eot');
+  src: url('../font/fontawesome-webfont.eot?#iefix') format('eot'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
   text-decoration: inherit;
 }
-
-a [class^="icon-"],
-a [class*=" icon-"] {
+a [class^="icon-"], a [class*=" icon-"] {
   display: inline-block;
   text-decoration: inherit;
 }
-
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
-  vertical-align: middle;
-  font-size: 4/3em;
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
 }
-
-.btn, .nav-tabs {
-  [class^="icon-"],
-  [class*=" icon-"] {
+.btn [class^="icon-"], .btn [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
-    line-height: .9em;
-  }
-}
 
-li {
-  [class^="icon-"],
-  [class*=" icon-"] {
-    display: inline-block;
-    width: 1.25em;
-    text-align: center;
-  }
-  .icon-large:before,
-  .icon-large:before {
-    /* 1.5 increased font size for icon-large * 1.25 width */
-    width: 1.5*1.25em;
-  }
+  line-height: .9em;
 }
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
 
-ul.icons {
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
   list-style-type: none;
-  margin-left: 2em;
-  text-indent: -.8em;
-
-  li {
-    [class^="icon-"],
-    [class*=" icon-"] {
-      width: .8em;
-    }
-    .icon-large:before,
-    .icon-large:before {
-      /* 1.5 increased font size for icon-large * 1.25 width */
-      vertical-align: initial;
-//      width: 1.5*1.25em;
-    }
-  }
 }
-
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 .icon-glass:before                { content: "\f000"; }

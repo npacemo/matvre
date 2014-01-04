@@ -1,11 +1,11 @@
 /*:::: SITE COLORS ::::*/
 
 $black: #222222;
-$ltblack: #3E444D;
+$ltblack: #4D4D4D;
 $text: #333332;
 $white: #F6F8FB;
-$orange: #E77552;
-$link-color: #E77552;
+$orange: #72944D;
+$link-color: #72944D;
 
 /* BACKGROUND GRADIENT MIXINS */
 
@@ -122,7 +122,7 @@ html .gist .gist-file {
    } @else {
      background: $base02 $noise-bg;
    }
-   @extend .sans;
+   @extend .sans !optional;
    line-height: 1.5em;
     a {
       color: mix($base1, $base01) !important;
@@ -144,7 +144,7 @@ html .gist .gist-file {
 pre {
   background: $pre-bg $noise-bg;
   @include border-radius(.4em);
-  @extend .mono;
+  @extend .mono !optional;
   border: 1px solid $pre-border;
   line-height: 1.45em;
   font-size: 13px;
@@ -160,7 +160,7 @@ h3.filename {
 
 p, li {
   code {
-    @extend .mono;
+    @extend .mono !optional;
     display: inline-block;
     white-space: no-wrap;
     background: #fff;
